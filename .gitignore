@@ -1,0 +1,14 @@
+# Ignore plugin installs
+lazy/
+mason/
+
+# Ignore caches
+cache/
+luac/
+swap/
+session/
+undo/
+
+# Neovim local share dirs — won't exist here but good practice
+*.log
+
