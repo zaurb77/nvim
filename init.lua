@@ -1,4 +1,5 @@
 require("config.lazy")
-require("lazy").setup({
-  {"nvim-treesitter/nvim-treesitter", branch = 'master', lazy = false, build = ":TSUpdate"}
-})
+
+-- Load all plugins from lua/plugins/
+require("lazy").setup("plugins")
+

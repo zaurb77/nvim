@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 import random
 
-#for word in word_list:
+# for word in word_list:
 #    print(word)
 
 
 word_list = ["aardvark", "baboon", "camel"]
-chosen_word =random.choice(word_list)
+chosen_word = random.choice(word_list)
 
 print("Welcome to Hangman game!")
 print("The chosen word is:")
@@ -27,16 +27,15 @@ game_over = False
 while not game_over:
     guess = input("Try to guess a letter: ").lower()
 
-# TODO-2: Change the for loop so that you keep the previous correct letters in display.
+    # TODO-2: Change the for loop so that you keep the previous correct letters in display.
 
     for i in range(len(chosen_word)):
         if chosen_word[i] == guess:
             placeholder[i] = guess
-            guess=""
+            guess = ""
 
     if "-" not in placeholder:
         game_over = True
     print("".join(placeholder))
 
 print("You win!")
-
