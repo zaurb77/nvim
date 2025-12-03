@@ -41,7 +41,7 @@ return {
             },
 
             pyright = {
-                cmd = { "/home/zaur/.local/bin/pyright-langserver" },
+                cmd = { vim.fn.exepath("pyright-langserver"), "--stdio" },
                 root_markers = { "pyproject.toml", "setup.py", "requirements.txt" },
                 settings = {
                     python = {
